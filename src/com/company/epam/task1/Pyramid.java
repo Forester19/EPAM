@@ -16,80 +16,30 @@ public class Pyramid {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        switch(number){
-            case 1: {
-                System.out.println("        1");
-                break;
-            }
-            case 2: {
-                System.out.println("        1");
-                System.out.println("       121");
-                break;
-            }
-            case 3: {
-                System.out.println("        1");
-                System.out.println("       121");
-                System.out.println("      12321");
-                break;
-            }
-            case 4: {
-                System.out.println("        1");
-                System.out.println("       121");
-                System.out.println("      12321");
-                System.out.println("     1234321");
-                break;
-            }
-            case 5: {
-                System.out.println("        1");
-                System.out.println("       121");
-                System.out.println("      12321");
-                System.out.println("     1234321");
-                System.out.println("    123454321");
-                break;
-            }
-            case 6: {
-                System.out.println("        1");
-                System.out.println("       121");
-                System.out.println("      12321");
-                System.out.println("     1234321");
-                System.out.println("    123454321");
-                System.out.println("   12345654321");
-                break;
-            }
-            case 7: {
-                System.out.println("        1");
-                System.out.println("       121");
-                System.out.println("      12321");
-                System.out.println("     1234321");
-                System.out.println("    123454321");
-                System.out.println("   12345654321");
-                System.out.println("  1234567654321");
-                break;
-            }
-            case 8: {
-                System.out.println("        1");
-                System.out.println("       121");
-                System.out.println("      12321");
-                System.out.println("     1234321");
-                System.out.println("    123454321");
-                System.out.println("   12345654321");
-                System.out.println("  1234567654321");
-                System.out.println(" 123456787654321");
 
-                break;
-            }case 9: {
-                System.out.println("        1");
-                System.out.println("       121");
-                System.out.println("      12321");
-                System.out.println("     1234321");
-                System.out.println("    123454321");
-                System.out.println("   12345654321");
-                System.out.println("  1234567654321");
-                System.out.println(" 123456787654321");
-                System.out.println("12345678987654321");
-                 break;
+        StringBuilder sb = new StringBuilder();
+        for (int i = 1; i < (number + 1); i++) {
+            int j;
+
+            for (int k = 1; k <= number-i; k++)
+            {
+                sb.append(" ");
             }
+
+
+            for (j = 1; j < i; j++){
+                sb.append(j);
+            }
+
+            sb.append(i);
+
+            for (j--; j > 0; j--){
+                sb.append(j);
+            }
+
+            sb.append("\n");
         }
+        System.out.println(sb.toString());
 
-    }
-}
+
+}}
