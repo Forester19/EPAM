@@ -1,4 +1,4 @@
-package com.company.epam.task2.view;
+package com.company.epam.task1.abitu.view;
 
 import java.io.BufferedReader;
 import java.io.IOException;

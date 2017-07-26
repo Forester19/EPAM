@@ -1,9 +1,9 @@
-package com.company.epam.task2.controller;
+package com.company.epam.task1.abitu.controller;
 
-import com.company.epam.task2.MyComparator;
-import com.company.epam.task2.Stock;
-import com.company.epam.task2.model.Entrolle;
-import com.company.epam.task2.view.ConsoleHelper;
+import com.company.epam.task1.abitu.MyComparator;
+import com.company.epam.task1.abitu.Stock;
+import com.company.epam.task1.abitu.model.Entrolle;
+import com.company.epam.task1.abitu.view.ConsoleHelper;
 
 import java.io.BufferedReader;
 import java.io.IOException;

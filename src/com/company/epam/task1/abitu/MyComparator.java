@@ -1,6 +1,6 @@
-package com.company.epam.task2;
+package com.company.epam.task1.abitu;
 
-import com.company.epam.task2.model.Entrolle;
+import com.company.epam.task1.abitu.model.Entrolle;
 
 import java.util.Comparator;
 
