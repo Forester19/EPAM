@@ -11,8 +11,8 @@ public class ConsoleWorker {
     private StringBuilder stringBuilder = new StringBuilder();
 
     public String readText() throws IOException {
-        System.out.println("fergerteh");
-        String text = null;
+        System.out.println("please set text");
+        String text;
         while ((text = scanner.nextLine()).length() != 0)
             stringBuilder.append(text + "\n");
 
