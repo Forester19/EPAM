@@ -21,13 +21,6 @@ public class Service {
     private Entrolle[] students = stock.getStudents();
     private ConsoleHelper consoleHelper = new ConsoleHelper();
 
-    public Service() {
-        setStudents();
-    }
-
-    private void setStudents() {
-
-    }
 
     public void doJob(Entrolle[] array) {
         int result = consoleHelper.consoleWorker();
@@ -73,6 +66,7 @@ public class Service {
                     Arrays.sort(students, (a,b) -> (a.getSurname().compareTo(b.getSurname())));
                     System.out.println(students[i]);
                 }
+                break;
             }
 
         }
