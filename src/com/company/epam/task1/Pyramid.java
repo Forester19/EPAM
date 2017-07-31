@@ -18,21 +18,16 @@ public class Pyramid {
         }
 
         StringBuilder sb = new StringBuilder();
-        for (int i = 1; i < (number + 1); i++) {
+        for (int i = 1; i < number + 1; i++) {
             int j;
-
             for (int k = 1; k <= number-i; k++)
             {
                 sb.append(" ");
             }
-
-
             for (j = 1; j < i; j++){
                 sb.append(j);
             }
-
             sb.append(i);
-
             for (j--; j > 0; j--){
                 sb.append(j);
             }

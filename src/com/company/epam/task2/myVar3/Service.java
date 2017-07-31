@@ -1,4 +1,4 @@
-package com.company.epam.task2;
+package com.company.epam.task2.myVar3;
 
 import java.io.IOException;
 import java.util.regex.Matcher;

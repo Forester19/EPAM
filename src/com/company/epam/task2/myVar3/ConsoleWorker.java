@@ -1,4 +1,4 @@
-package com.company.epam.task2;
+package com.company.epam.task2.myVar3;
 
 import java.io.IOException;
 import java.util.Scanner;
@@ -11,12 +11,12 @@ public class ConsoleWorker {
     private StringBuilder stringBuilder = new StringBuilder();
 
     public String readText() throws IOException {
+        System.out.println("fergerteh");
         String text = null;
-        do {
-            text = scanner.nextLine();
-            stringBuilder.append(text);
-        }
-        while (scanner.nextLine() == null);
+        while ((text = scanner.nextLine()).length() != 0)
+            stringBuilder.append(text + "\n");
+
+
         return stringBuilder.toString();
     }
 }
