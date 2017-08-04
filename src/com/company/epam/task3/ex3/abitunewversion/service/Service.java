@@ -1,9 +1,13 @@
 package com.company.epam.task3.ex3.abitunewversion.service;
 
+
+import com.company.epam.task1.abitu.model.Entrolle;
 import com.company.epam.task3.ex2.ConsoleWorker;
 import com.company.epam.task3.ex3.abitunewversion.model.Abiturient;
 import com.company.epam.task3.ex3.abitunewversion.model.Person;
 
+import java.io.File;
+import java.io.IOException;
 import java.nio.Buffer;
 import java.util.*;
 
@@ -13,6 +17,9 @@ import java.util.*;
 public class Service<T extends Person> {
 
     com.company.epam.task3.ex3.abitunewversion.view.ConsoleWorker consoleWorker = new com.company.epam.task3.ex3.abitunewversion.view.ConsoleWorker();
+
+    private String fileUrl = "enrollee.txt";
+    private File  file  = new File(fileUrl);
 
     public void doJob(T[] array) {
         int number = consoleWorker.consoleWorker();
@@ -40,9 +47,15 @@ public class Service<T extends Person> {
                 }
 
             }
+            case 4:{
+
+
+            }
         }
 
     }
+
+
 
     private ArrayList<Abiturient> showAbitsWithBadMarks(T[] abiturients) {
         Abiturient[] newArray = new Abiturient[10];
