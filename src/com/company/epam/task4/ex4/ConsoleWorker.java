@@ -7,41 +7,23 @@ import java.util.Scanner;
  * Created by Владислав on 04.08.2017.
  */
 public class ConsoleWorker {
-   private int selectNimber;
-   private String engW;
-   private String rusW;
-    private Scanner scanner;
-    public void jobWithConsole(){
-        scanner = new Scanner(System.in);
-        System.out.println("Show map - 1" + " \n" + "Add new element to map - 2" + " \n" + "Translate words - 3");
-        selectNimber = scanner.nextInt();
-        if (selectNimber>3 || selectNimber<1){
-            System.out.println("error !!!");
+
+    private StringBuilder stringBuilder = new StringBuilder();
+    private FrasesStack stack = new FrasesStack();
+    public String jobWithConsole(){
+        Scanner scanner = new Scanner(System.in);
+        String s = scanner.nextLine();
+        String[] array = s.split(" ");
+
+        for (String s1 : array){
+           if(stack.getMap().containsKey(s1)){
+                      stringBuilder.append(stack.getMap().get(s1) + " ");
+           }
+
+
         }
-
-
-    }
-    public void readNewElementsToMap(){
-        scanner = new Scanner(System.in);
-        System.out.println("Enter eng phrase ...");
-        engW = scanner.nextLine();
-        System.out.println("Enter rus phrase ...");
-        rusW = scanner.nextLine();
+        return stringBuilder.toString();
     }
 
-    public String getEngW() {
-        return engW;
-    }
 
-    public String getRusW() {
-        return rusW;
-    }
-
-    public int getSelectNimber() {
-        return selectNimber;
-    }
-
-    public void setSelectNimber(int selectNimber) {
-        this.selectNimber = selectNimber;
-    }
 }
